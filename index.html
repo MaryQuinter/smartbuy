@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartBuy</title>
+    <link rel="icon" href="./assets/icons/logo.png">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="contenedor active"> <!--active es mi segunda clase para agregrar la transition-->
+
+        <header class="mi-header">
+
+            <div class="linea-1">
+                <div class="barra-pais">
+                    <label for="Pais">País</label>
+                    <select name="Argentina" id="">
+                        <option value="Alemania">Alemania</option>
+                        <option value="Canada">Canada</option>
+                        <option value="China">China</option>
+                        <option value="Corea del Sur">Corea del Sur</option>
+                        <option value="Reino Unido">Reino Unido</option>
+                        <option value="Afganistan">Afganistán</option>
+                        <option value="España">Alemania</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Korea">Alemania</option>
+                    </select>
+                </div>
+                <div class="smartbuy-centro">
+                    <a class="logo-principal" href="index.html"><img src="./assets/icons/logo.png" alt=""><span class="color-ancla-logo">SmartBuy</span></a>
+                </div>
+                <div class="tu-pedido">
+                    <a class="logo-principal" href="#"><img class="icono-sizesi" src="./assets/icons/pedidovacio.png" alt=""><span class="color-ancla-pedido">Tu pedido está <strong>vacío</strong></span></a>
+                </div>
+            </div>
+            <div class="linea-2">
+                <div class="lengua">
+                    <label for="Idioma">Idioma</label>
+                    <select name="Español" id="">
+                        <option value="Español">Español</option>
+                        <option value="Coreano">Coreano</option>
+                        <option value="Inglés">Inglés</option>
+                        <option value="Portugues">Portugues</option>
+                    </select>
+                </div>
+                <div class="search-container">
+                    <input type="search" placeholder="Buscar">
+                    <img class="icono-search" src="./assets/icons/buscar.png" alt="">
+                </div>
+                <div class="bienvenido">
+                        <p>¡Bienvenido! <a class="bienve-eres" href="#">Iniciar Sesión</a></p>
+                </div>
+                <div class="nuevo">
+                    <p>¿Eres nuevo aquí? <a class="bienve-eres" href="#">Regístrate</a></p>
+                </div>
+            </div>
+            <div class="linea-3">
+                <h1>Compra rápido<br>
+                y ahorra fácil con SmartBuy
+                </h1>
+            </div>
+
+        </header>
+
+
+        <nav class="menu-izquierdo">
+            <div class="stiky">
+                <div class="lista-centrada">
+                    <a class="active" href=""><img src="./assets/icons/home.png" alt=""><span>Inicio</span></a>
+                    <a class="logo-menu" href="#"><img src="./assets/icons/perfil.png" alt=""><span>Perfil</span></a>
+                    <a class="logo-menu" href="#"><img src="./assets/icons/enviar.png" alt=""><span>Mensajes</span></a>
+                    <a class="logo-menu" href="#"><img src="./assets/icons/boton-de-notificaciones.png" alt=""><span>Notificaciones</span></a>
+                    <a class="logo-menu" href="#"><img src="./assets/icons/estrella.png" alt=""><span>Favoritos</span></a>
+                    <a class="logo-menu" href="#"><img src="./assets/icons/metodo-de-pago.png" alt=""><span>Pagos</span></a>
+                    <a class="logo-menu" href="#"><img src="./assets/icons/tiienda.png" alt=""><span>Mi tienda</span></a>
+                    <a class="logo-menu" href="#"><img src="./assets/icons/menu.png" alt=""><span>Más</span></a>
+                </div>
+
+                <hr>
+                
+                <div class="productos">
+                    <p>Pedido</p>
+                    <a href="#"><p id="monto">US$0.00</p></a>
+                </div>
+            </div>
+        </nav>
+
+<!--main-->
+
+        <main class="contenido-main">
+            
+                <div class="encabezado">
+                    <p>Consigue lo que quieras<p>
+                    <p>con<a href="#"> marcas reconocidas</a> o pequeñas<a href=""> tiendas calificadas</a></p>
+                </div>
+
+                <div class="logos-centrados">
+                    <a href="#"><img class="size-icono" src="./assets/icons/mcdonalds-ico.png" alt="">Mcdonalds</a>
+                    <a href="#"><img class="size-icono" src="./assets/icons/samsung-lo.png" alt="">Samsung</a>
+                    <a href="#"><img class="size-icono" src="./assets/icons/starbucks-lo.png" alt="">Starbucks</a>
+                    <a href="#"><img class="size-icono" src="./assets/icons/burger-king.png" alt="">Burger King</a>
+                    <a href="#"><img class="size-icono" src="./assets/icons/lego.png" alt="">Lego</a>
+                    <a href="#"><img class="size-icono" src="./assets/icons/adidas.png" alt="">Adidas</a>
+                </div>
+            <hr class="cards">
+                <section class="elegir-barra">
+                    <legend>¿Deseas pedir o reservar?</legend>
+                    <select name="Pedir" id="">
+                        <option value="Pedir">Pedir</option>
+                        <option value="Reservar">Reservar</option>
+                    </select>
+                </section>
+
+<!--Cards productos-->
+
+            <div class="parent-secciones">
+            
+                <a class="item-1" href="">
+                    <img class="icono-size" src="./assets/icons/comida-rapida.png" alt="">
+                    <h3 class="fuente-cards">Comida</h3>
+                </a>
+                <a class="item-1" href="">
+                    <img class="icono-size" src="./assets/icons/camiseta.png" alt="">
+                    <h3 class="fuente-cards">Ropa</h3>
+                </a>
+                <a class="item-1" href="">
+                    <img class="icono-size" src="./assets/icons/entrada-de-cine.png" alt="">
+                    <h3 class="fuente-cards">Tickets</h3>
+                </a>
+                <a class="item-1" href="">
+                    <img class="icono-size" src="./assets/icons/anillo.png" alt="">
+                    <h3 class="fuente-cards">Bisutería</h3>
+                </a>
+                <a class="item-1" href="">
+                    <img class="icono-size" src="./assets/icons/maquillaje.png" alt="">
+                    <h3 class="fuente-cards">Maquillaje</h3>
+                </a>
+                <a class="item-1" href="./pages/arreglosyregalos.html">
+                    <img class="icono-size" src="./assets/icons/cajaderegalo.png" alt="">
+                    <h3 class="fuente-cards">Arreglos y Regalos</h3>
+                </a>
+            
+                <a class="item-2" href="">
+                    <img class="icono-size" src="./assets/icons/sensible.png" alt="">
+                    <h3 class="fuente-cards">Celulares y<br>
+                    computación</h3>
+                </a>
+                <a class="item-2" href="">
+                    <img class="icono-size" src="./assets/icons/volante.png" alt="">
+                    <h3 class="fuente-cards">Vehículos y <br>
+                    accesorios</h3>
+                </a>
+                <a class="item-2" href="">
+                    <img class="icono-size" src="./assets/icons/dinosaurio.png" alt="">
+                    <h3 class="fuente-cards">Juguetes</h3>
+                </a>
+                <a class="item-2" href="">
+                    <img class="icono-size" src="./assets/icons/sala-de-estar.png" alt="">
+                    <h3 class="fuente-cards">Hogar</h3>
+                </a>
+                <a class="item-2" href="">
+                    <img class="icono-size" src="./assets/icons/globos.png" alt="">
+                    <h3 class="fuente-cards">Festejos</h3>
+                </a>
+                <a class="item-2" href="">
+                    <img class="icono-size" src="./assets/icons/libro.png" alt="">
+                    <h3 class="fuente-cards">Libros</h3>
+                </a>
+            </div>
+                
+
+<!--cards vcr-->
+            <hr class="cards">
+            <div class="cards-vcr-padre">
+                <div class="card-1">
+                    <p class="titulo">Vende</p>
+                    <img src="./assets/icons/trato.png" alt="">
+                    <p>Desde tu tienda <br>
+                    online</p>
+                </div>
+                <div class="card-1">
+                    <p class="titulo">Compra</p>
+                    <img src="./assets/icons/bolsa-de-la-compra.png" alt="">
+                    <p>Desde donde <br>
+                    estés</p>
+                </div>
+                <div class="card-1">
+                    <p class="titulo">Reserva</p>
+                    <img src="./assets/icons/reserva.png" alt="">
+                    <p>Para el momento que <br>
+                    desees</p>
+                </div>
+            </div>
+            <hr class="cards">
+
+<!--Cuts-->
+
+            <section class="cuts-container">
+                <div class="tittle">
+                <a class="titulo-cuts" href="index.html"><img src="./assets/icons/boton-de-play.png" alt=""><span>Cuts</span></a>
+                </div>
+                <div class="grid-videos">
+                    <div class="video-1">
+                        <iframe width="198" height="295" src="https://www.youtube.com/embed/F48kxpHZMOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <p>Winter Collection 2023</p>
+                    </div>
+                    <div class="video-1">
+                        <iframe width="198" height="295" src="https://www.youtube.com/embed/OpLbPSGwRLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <p>Hyundai X. We will not wait...</p>
+                    </div>
+                    <div class="video-1">
+                        <iframe width="198" height="295" src="https://www.youtube.com/embed/OJ12GwU2KRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <p>Prueba la BTS meal</p>
+                    </div>
+                    <div class="video-1">
+                        <iframe width="198" height="295" src="https://www.youtube.com/embed/VcswqEnOmQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <p>Puma edition by BTS</p>
+                    </div>
+                    <div class="video-1">
+                        <iframe width="198" height="295" src="https://www.youtube.com/embed/HeqD7v4f8Jk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <p>Galaxy Note20 by Samsung</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="buscador-tiendas">
+                <div class="descubrir-tiendas">
+                    <p>Descubramos las tiendas más cercanas a ti</p>
+                </div>
+                <div class="dos">
+                    <select name="Selecciona tu ubicación" id="">
+                        <option value="Selecciona tu ubicacion">Selecciona tu ubicación</option>
+                        <option value="Balvanera">Balvanera</option>
+                        <option value="Caballito">Caballito</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Belgrano">Belgrano</option>
+                    </select>
+                    <select name="Elige la categoría de tienda" id="">
+                        <option value="Elige la categoria de tienda">Elige la categoría de tienda</option>
+                        <option value="Cine">Cine</option>
+                        <option value="Restaurante">Restaurante</option>
+                        <option value="Zapatería">Zapatería</option>
+                        <option value="Tienda de regalos">Tienda de Regalos</option>
+                        <option value="Tienda de electrónicos">Tienda de electrónicos</option>
+                    </select>
+                </div>
+            </div>
+
+            <section>
+                <article class="resultado-tienda">
+                    <section class="result-1">
+                        <div>
+                            <div class="alineo-cine">
+                                <a href="index.html"><img src="./assets/icons/cine.png" alt=""></a>
+                                <div class="encabez">
+                                    <a href="#">Cinemark</a>
+                                    <h6>Abasto</h6>
+                                </div>
+                                </div>
+                                <div class="parrafo">
+                                <p>Acompaña a RM, Jin, SUGA, j-hope, Jimin, V y Jung Kook en este especial cortometraje, reeditado y remezclado para la gran pantalla. Descubre primeros planos de BTS.</p>
+                                </div>
+                            </div>
+                            <img class="picture-size" src="./assets/img/filas-asientos-rojos-teatro.jpg" alt="">
+                    </section>
+
+                    <section class="result-1">
+                        <div>
+                            <div class="alineo-cine">
+                            <a href="index.html"><img src="./assets/icons/lentes.png" alt=""></a>
+                            <div class="encabez">
+                                <a href="#">Cinemax</a>
+                                <h6>Pedregosa</h6>
+                            </div>
+                            </div>
+                            <div class="parrafo">
+                            <p>Revive los más detonantes momentos de Star Wars hoy a las 18h. Última entrega para la nueva trilogía de Star Wars que tiene como protagonista a Rey, Finn y Kylo Ren.</p>
+                            </div>
+                        </div>
+                        <img class="picture-size" src="./assets/img/stormtrooper.webp" alt="">
+                    </section>
+                </article>
+
+            </section>
+
+        </main>
+
+        <footer class="footer">
+            <div class="foot-container">
+                <div class="line-1">
+                    <p>Más información</p>
+                </div>
+                <div class="line-1">
+                    <p>Sobre SmartBuy</p>
+                    <p>Accesibilidad</p>
+                    <p>Cómo cuidamos tu privacidad</p>
+                    <p>Ayuda</p>
+                    <p>Devoluciones</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
+
