@@ -10,7 +10,7 @@
 </head>
 
 <body>
-        <div class="contenedor active"> 
+        <section class="hero-contain"> 
     
             <header class="mi-header">
     
@@ -59,76 +59,110 @@
                     </div>
                 </div>
                 <div class="linea-3">
-                    <h1>Obtén una mejor apreciación del<br>
-                    producto y compra de manera segura
+                    <h1>SmartBuy<br>
+                    Compras rápidas y sin filtros
                     </h1>
                 </div>
     
             </header>
 
-            <nav class="menu-left">
+        <!--main-->
+
+        
+        <main class="contenido-main"> <!--contenedor del main-->
+
+            <section class="menu-izquierdo"> 
                 <div class="stiky">
                     <div class="lista-centrada">
-                        <a class="logo-menu" href="../index.html"><img src="../assets/icons/home.png" alt=""><span>Inicio</span></a>
-                        <a class="logo-menu" href="#"><img src="../assets/icons/perfil.png" alt=""><span>Perfil</span></a>
-                        <a class="logo-menu" href="#"><img src="../assets/icons/enviar.png" alt=""><span>Mensajes</span></a>
-                        <a class="logo-menu" href="#"><img src="../assets/icons/boton-de-notificaciones.png" alt=""><span>Notificaciones</span></a>
-                        <a class="logo-menu" href="#"><img src="../assets/icons/estrella.png" alt=""><span>Favoritos</span></a>
-                        <a class="logo-menu" href="#"><img src="../assets/icons/metodo-de-pago.png" alt=""><span>Pagos</span></a>
-                        <a class="logo-menu" href="#"><img src="../assets/icons/tiienda.png" alt=""><span>Mi tienda</span></a>
-                        <a class="logo-menu" href="#"><img src="../assets/icons/menu.png" alt=""><span>Más</span></a>
+                        <a class="active" href=""><img src="./assets/icons/home.png" alt=""><span class="menu-display-none">Inicio</span></a>
+                        <a class="logo-menu" href="#"><img src="./assets/icons/perfil.png" alt=""><span class="menu-display-none">Perfil</span></a>
+                        <a class="logo-menu" href="#"><img src="./assets/icons/enviar.png" alt=""><span class="menu-display-none">Mensajes</span></a>
+                        <a class="logo-menu" href="#"><img src="./assets/icons/boton-de-notificaciones.png" alt=""><span class="menu-display-none">Notificaciones</span></a>
+                        <a class="logo-menu" href="#"><img src="./assets/icons/estrella.png" alt=""><span class="menu-display-none">Favoritos</span></a>
+                        <a class="logo-menu" href="#"><img src="./assets/icons/metodo-de-pago.png" alt=""><span class="menu-display-none">Pagos</span></a>
+                        <a class="logo-menu" href="#"><img src="./assets/icons/tiienda.png" alt=""><span class="menu-display-none">Mi tienda</span></a>
+                        <a class="logo-menu" href="#"><img src="./assets/icons/menu.png" alt=""><span class="menu-display-none">Más</span></a>
                     </div>
     
                     <hr>
                     
-                <div class="productos">
-                    <div class="alinea-icono">
-                        <a class="logo-principal" href="#"><img src="../assets/icons/notas.png" alt=""><span>Tu pedido</span></a>
-                    <div>
-                    <a href="#"><p id="monto">US$0.00</p></a>
+                    <div class="productos menu-display-none">
+                        <p>Mi pedido</p>
+                        <img src="./assets/icons/caja-de-regalo.png" alt="">
+                        <a href="#"><p id="monto">US$0.00</p></a>
+                    </div>
                 </div>
-            </nav>
-    
-    <!--main-->
+            </section>
 
-    <main class="contenido-main-tres">
+    <div class="main-lado-derecho">
 
-        <p>Arreglos y Regalos</p>
+        <p class="arreglos">Arreglos y Regalos</p>
         <h2>Torta de chocolate</h2>
 
         <article class="contenedor-foto-descripcion">
             <div class="it-1">
                 <img class="imagen-de-torta" src="../assets/img/tortadechocolate.png" alt="torta-de-chocolate">
-                <div>
-                    <img src="../assets/icons/me-gusta.png" alt="">
-                    <p>156 Me gusta</p>
-                </div>
-                <div>
-                    <img src="../assets/icons/pantalla-completa.png" alt="">
-                    <img src="../assets/icons/estrella.png" alt="">
-                    <img src="../assets/icons/enviar.png" alt="">
-                </div>
+                    <section class="items-line">
+                            <img src="../assets/icons/me-gusta.png" alt="">
+                            <p class="me-gusta-foto">156 Me gusta</p>
+                            <img class="icono-alinear" src="../assets/icons/pantalla-completa.png" alt="">
+                            <img class="icono-alinear" src="../assets/icons/estrella.png" alt="">
+                            <img class="icono-alinear" src="../assets/icons/enviar.png" alt="">
+                    </section>
             </div>
 
             <div class="it-2">
                 <section>
-                    <img src="../assets/icons/decoracion-de-la-torta.png" alt="">
-                    <div>
-                        <p>Dulces Detalles</p>
-                        <p>Barquisimeto, Venezuela</p>
+                    <div class="store-name">
+                        <img src="../assets/icons/decoracion-de-la-torta.png" alt="">
+                        <div class="text">
+                            <p class="titulo-tienda">Dulces Detalles</p>
+                            <p id="pisar-style">Mérida, Venezuela</p>
+                        </div>
                     </div>
                     <hr>
-                    <div>
-                        <p>Seguimos en tendencia con los mini cake black & gold. Un cuarto de kg de torta de chocolate rellena con ganache de Chocolate blanco y Arequipe, cubierta en ganache de chocolate oscuro. Definitivamente es la combinación perfecta entre ponque humedo y lo dulce del chocolate <br>
-                        ¿Que esperas para probarla? Personalizamos tus tortas para toda ocasión. Contáctanos a través de SmartChat, recuerda ordenar con 7 horas de anticipación.</p>
+                    <div class="parrafo">
+                        <p>Seguimos en tendencia con los mini cake black & gold. Un cuarto de kg de torta de chocolate rellena con ganache de Chocolate blanco y Arequipe, cubierta en ganache de chocolate oscuro. Definitivamente es la combinación perfecta entre ponque humedo y lo dulce del chocolate</p>
+
+                        <p>¿Qué esperas para probarla? Personalizamos tus tortas para toda ocasión. Contáctanos a través de SmartChat, recuerda ordenar con 7 horas de anticipación.</p>
+
+                        <p>Medidas: 25cm de alto aprox, 12cm de diametro</p>
                     </div>
+                    <hr>
+
+                    <div class="short-description">
+                        <img src="../assets/icons/reloj-de-pared.png" alt="">
+                        <div>Tiempo de entrega: 7 hours</div>
+
+                        <img src="../assets/icons/moto.png" alt="">
+                        <div>Tasa de envío: US$ 1</div>
+
+                        <img src="../assets/icons/marcador-de-posicion.png" alt="">
+                        <div>Ubicación:</div>
+                    </div>
+                    <p class="ubicacion">Av. Los Próceres, frente al gran Brasero. Residencias Los Trigales, edificio 4, junto a vigilancia</p>
                 </section>
-            </div>
+
+            
             
             
 
             </div>
         </article>
     </main>
+
+    <footer class="hero-3-footer">
+        <p class="first-info">Más información</p>
+        <ul class="second-list">
+            <li>Sobre SmartBuy</li>
+            <li>Accesibilidad</li>
+            <li>Cómo cuidamos tu privacidad</li>
+            <li>Ayuda</li>
+            <li>Devoluciones</li>
+        </ul>
+        </footer>
+
+    </section>
+    </section>
 </body>
 </html>

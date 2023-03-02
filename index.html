@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="contenedor active"> <!--active es mi segunda clase para agregrar la transition-->
+    <section class="hero-contain">
 
         <header class="mi-header">
 
@@ -66,33 +66,38 @@
 
         </header>
 
+        <!--main-->
 
-        <nav class="menu-izquierdo">
+        
+        <main class="contenido-main"> <!--contenedor del main-->
+
+            <section class="menu-izquierdo"> 
             <div class="stiky">
                 <div class="lista-centrada">
-                    <a class="active" href=""><img src="./assets/icons/home.png" alt=""><span>Inicio</span></a>
-                    <a class="logo-menu" href="#"><img src="./assets/icons/perfil.png" alt=""><span>Perfil</span></a>
-                    <a class="logo-menu" href="#"><img src="./assets/icons/enviar.png" alt=""><span>Mensajes</span></a>
-                    <a class="logo-menu" href="#"><img src="./assets/icons/boton-de-notificaciones.png" alt=""><span>Notificaciones</span></a>
-                    <a class="logo-menu" href="#"><img src="./assets/icons/estrella.png" alt=""><span>Favoritos</span></a>
-                    <a class="logo-menu" href="#"><img src="./assets/icons/metodo-de-pago.png" alt=""><span>Pagos</span></a>
-                    <a class="logo-menu" href="#"><img src="./assets/icons/tiienda.png" alt=""><span>Mi tienda</span></a>
-                    <a class="logo-menu" href="#"><img src="./assets/icons/menu.png" alt=""><span>Más</span></a>
+                    <a class="active" href=""><img src="./assets/icons/home.png" alt=""><span class="menu-display-none">Inicio</span></a>
+                    <a class="logo-menu" href="#"><img src="./assets/icons/perfil.png" alt=""><span class="menu-display-none">Perfil</span></a>
+                    <a class="logo-menu" href="#"><img src="./assets/icons/enviar.png" alt=""><span class="menu-display-none">Mensajes</span></a>
+                    <a class="logo-menu" href="#"><img src="./assets/icons/boton-de-notificaciones.png" alt=""><span class="menu-display-none">Notificaciones</span></a>
+                    <a class="logo-menu" href="#"><img src="./assets/icons/estrella.png" alt=""><span class="menu-display-none">Favoritos</span></a>
+                    <a class="logo-menu" href="#"><img src="./assets/icons/metodo-de-pago.png" alt=""><span class="menu-display-none">Pagos</span></a>
+                    <a class="logo-menu" href="#"><img src="./assets/icons/tiienda.png" alt=""><span class="menu-display-none">Mi tienda</span></a>
+                    <a class="logo-menu" href="#"><img src="./assets/icons/menu.png" alt=""><span class="menu-display-none">Más</span></a>
                 </div>
 
                 <hr>
                 
-                <div class="productos">
-                    <p>Pedido</p>
+                <div class="productos menu-display-none">
+                    <p>Mi pedido</p>
+                    <img src="./assets/icons/caja-de-regalo.png" alt="">
                     <a href="#"><p id="monto">US$0.00</p></a>
                 </div>
             </div>
-        </nav>
+        </section>
 
-<!--main-->
 
-        <main class="contenido-main">
-            
+
+            <div class="main-lado-derecho">
+
                 <div class="encabezado">
                     <p>Consigue lo que quieras<p>
                     <p>con<a href="#"> marcas reconocidas</a> o pequeñas<a href=""> tiendas calificadas</a></p>
@@ -204,24 +209,24 @@
                 <a class="titulo-cuts" href="index.html"><img src="./assets/icons/boton-de-play.png" alt=""><span>Cuts</span></a>
                 </div>
                 <div class="grid-videos">
-                    <div class="video-1">
-                        <iframe width="198" height="295" src="https://www.youtube.com/embed/F48kxpHZMOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="video-1 vi-1">
+                        <iframe width="190" height="295" src="https://www.youtube.com/embed/F48kxpHZMOw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <p>Winter Collection 2023</p>
                     </div>
-                    <div class="video-1">
-                        <iframe width="198" height="295" src="https://www.youtube.com/embed/OpLbPSGwRLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="video-1 vi-2">
+                        <iframe width="190" height="295" src="https://www.youtube.com/embed/OpLbPSGwRLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <p>Hyundai X. We will not wait...</p>
                     </div>
-                    <div class="video-1">
-                        <iframe width="198" height="295" src="https://www.youtube.com/embed/OJ12GwU2KRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="video-1 vi-3">
+                        <iframe width="190" height="295" src="https://www.youtube.com/embed/OJ12GwU2KRU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <p>Prueba la BTS meal</p>
                     </div>
-                    <div class="video-1">
-                        <iframe width="198" height="295" src="https://www.youtube.com/embed/VcswqEnOmQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="video-1 video-display-none">
+                        <iframe width="190" height="295" src="https://www.youtube.com/embed/VcswqEnOmQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <p>Puma edition by BTS</p>
                     </div>
-                    <div class="video-1">
-                        <iframe width="198" height="295" src="https://www.youtube.com/embed/HeqD7v4f8Jk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="video-1 video-none">
+                        <iframe width="190" height="295" src="https://www.youtube.com/embed/HeqD7v4f8Jk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         <p>Galaxy Note20 by Samsung</p>
                     </div>
                 </div>
@@ -268,7 +273,7 @@
                             <img class="picture-size" src="./assets/img/filas-asientos-rojos-teatro.jpg" alt="">
                     </section>
 
-                    <section class="result-1">
+                    <section class="result-1 result-2">
                         <div>
                             <div class="alineo-cine">
                             <a href="index.html"><img src="./assets/icons/lentes.png" alt=""></a>
@@ -287,27 +292,25 @@
 
             </section>
 
+        </div>
+        </div>
         </main>
 
-        <footer class="footer">
-            <div class="foot-container">
-                <div class="line-1">
-                    <p>Más información</p>
-                </div>
-                <div class="line-1">
-                    <p>Sobre SmartBuy</p>
-                    <p>Accesibilidad</p>
-                    <p>Cómo cuidamos tu privacidad</p>
-                    <p>Ayuda</p>
-                    <p>Devoluciones</p>
-                </div>
-            </div>
-        </footer>
+        <footer class="hero-3-footer">
+            <p class="first-info">Más información</p>
+            <ul class="second-list">
+                <li>Sobre SmartBuy</li>
+                <li>Accesibilidad</li>
+                <li>Cómo cuidamos tu privacidad</li>
+                <li>Ayuda</li>
+                <li>Devoluciones</li>
+            </ul>
+            </footer>
 
-    </div>
+        </section>
+        </section>
 
 
-    <script src="main.js"></script>
 </body>
 </html>
 

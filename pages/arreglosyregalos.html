@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="container active"> 
+    <div class="hero-contain"> 
 
-        <header class="my-header">
+        <header class="mi-header">
 
             <div class="linea-1">
                 <div class="barra-pais">
@@ -65,38 +65,42 @@
 
         </header>
 
-        <nav class="menu-left">
+        <!--main-->
+
+        
+        <main class="contenido-main-dos"> <!--contenedor del main-->
+
+            <section class="menu-izquierdo"> 
             <div class="stiky">
                 <div class="lista-centrada">
-                    <a class="logo-menu" href="../index.html"><img src="../assets/icons/home.png" alt=""><span>Inicio</span></a>
-                    <a class="logo-menu" href="#"><img src="../assets/icons/perfil.png" alt=""><span>Perfil</span></a>
-                    <a class="logo-menu" href="#"><img src="../assets/icons/enviar.png" alt=""><span>Mensajes</span></a>
-                    <a class="logo-menu" href="#"><img src="../assets/icons/boton-de-notificaciones.png" alt=""><span>Notificaciones</span></a>
-                    <a class="logo-menu" href="#"><img src="../assets/icons/estrella.png" alt=""><span>Favoritos</span></a>
-                    <a class="logo-menu" href="#"><img src="../assets/icons/metodo-de-pago.png" alt=""><span>Pagos</span></a>
-                    <a class="logo-menu" href="#"><img src="../assets/icons/tiienda.png" alt=""><span>Mi tienda</span></a>
-                    <a class="logo-menu" href="#"><img src="../assets/icons/menu.png" alt=""><span>Más</span></a>
+                    <a class="active" href="../index.html"><img src="../assets/icons/home.png" alt=""><span class="menu-display-none">Inicio</span></a>
+                    <a class="logo-menu" href="#"><img src="../assets/icons/perfil.png" alt=""><span class="menu-display-none">Perfil</span></a>
+                    <a class="logo-menu" href="#"><img src="../assets/icons/enviar.png" alt=""><span class="menu-display-none">Mensajes</span></a>
+                    <a class="logo-menu" href="#"><img src="../assets/icons/boton-de-notificaciones.png" alt=""><span class="menu-display-none">Notificaciones</span></a>
+                    <a class="logo-menu" href="#"><img src="../assets/icons/estrella.png" alt=""><span class="menu-display-none">Favoritos</span></a>
+                    <a class="logo-menu" href="#"><img src="../assets/icons/metodo-de-pago.png" alt=""><span class="menu-display-none">Pagos</span></a>
+                    <a class="logo-menu" href="#"><img src="../assets/icons/tiienda.png" alt=""><span class="menu-display-none">Mi tienda</span></a>
+                    <a class="logo-menu" href="#"><img src="../assets/icons/menu.png" alt=""><span class="menu-display-none">Más</span></a>
                 </div>
 
                 <hr>
                 
-            <div class="productos">
-                <div class="alinea-icono">
-                    <a class="logo-principal" href="#">
-                    <!--<img src="../assets/icons/notas.png" alt="">-->
-                    <span>Pedido</span></a>
-                <div>
-                <a href="#"><p id="monto">US$0.00</p></a>
+                <div class="productos menu-display-none">
+                    <p>Mi pedido</p>
+                    <img src="../assets/icons/caja-de-regalo.png" alt="">
+                    <a href="#"><p id="monto">US$0.00</p></a>
+                </div>
             </div>
-        </nav>
+        </section>
 
-<!--main-->
 
-    <main class="contenido-main-dos">
+
+    <div class="contenido-main-dos-right">
+        
 <!--card 1-->
         <h2 class="titulo-arre">Arreglos y regalos</h2>
-        <article class="cajas-grid">
-            
+        
+        <section class="grid-publicaciones">
             <section class="post">
                 <article class="encabe-arriba">
                     <div class="logo">
@@ -104,7 +108,7 @@
                     </div>
                     <div class="nombre-tienda">
                         <a href="#">Dulces Detalles</a>
-                        <h6>Barquisimeto, Venezuela</h6>
+                        <h6>Mérida, Venezuela</h6>
                     </div>
                 </article>
                 <a href="./tortadechocolate.html"><img class="tamaño-post" src="../assets/img/tortadechocolate.png" alt=""></a>
@@ -411,24 +415,25 @@
                     <p class="descripcion-cake">Contiene 3 cervezas Zulia, 15 chocofresas en base de madera, junto a frase personalizada en chocolate</p>
                 </div>
             </section>
-        </article>
+        </div>
+    </section>
     </main>
 
 
 
-    <footer class="footer">
-        <div class="foot-container">
-            <div class="line-1">
-                <p>Más información</p>
-            </div>
-            <div class="line-1">
-                <p>Sobre SmartBuy</p>
-                <p>Accesibilidad</p>
-                <p>Cómo cuidamos tu privacidad</p>
-                <p>Ayuda</p>
-                <p>Devoluciones</p>
-            </div>
-        </div>
-    </footer>
+    <footer class="hero-3-footer">
+        <p class="first-info">Más información</p>
+        <ul class="second-list">
+            <li>Sobre SmartBuy</li>
+            <li>Accesibilidad</li>
+            <li>Cómo cuidamos tu privacidad</li>
+            <li>Ayuda</li>
+            <li>Devoluciones</li>
+        </ul>
+        </footer>
+
+
+        </section>
+        </section>
 </body>
 </html>
