@@ -12,6 +12,8 @@
 #D9D9D9
 #F5EDED
 #FF0000
+#AF0404
+#9D4AA8
 */
 
 /*fuentes
@@ -114,6 +116,8 @@ a{
     font-weight: 600;
     font-size: 95%;
 }
+
+
 .linea-2 div{
     display: flex;
     width: 100%;
@@ -789,6 +793,7 @@ a.active span{
     grid-template-rows: repeat(3, 33%);
     gap: 30px 20px;
     grid-template-areas: none;
+    padding-bottom: 50px;
 }
 
 .encabe-arriba{
@@ -844,8 +849,8 @@ a.active span{
 .tamaño-boton .boton-compra{
     height: 40px;
     width: 140px;
-    border-radius: 10px;
-    border: 1.5px solid #ff0000;
+    border-radius: 16px;
+    border-color: #9D4AA8;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -887,9 +892,11 @@ a.active span{
 
 
 
+
+
 /*Tercera pag html, arreglos y regalos********************/
 
-.hero-contenedor{
+.hero-contain{
     width: 100%;
     height: 100vh;
     margin: 0 auto;
@@ -898,7 +905,7 @@ a.active span{
     grid-template-rows: 27% auto 10%; /*header main footer*/
     grid-template-areas: 
     "header header" /*plantilla*/
-    "menu contenido"
+    "contenido contenido"
     "footer footer";
 }
 
@@ -906,15 +913,9 @@ a.active span{
     grid-area: header;
 }
 
-.menu-izquierdo{
-    grid-area: menu;
-    background-color: #D9D9D9;
-}
-
 .contenido-main-tres{
     grid-area: contenido;
     background-color: #f9f9f9;
-    padding: 35px;
 }
 
 .footer{
@@ -922,12 +923,35 @@ a.active span{
     background-color: #ff0000;
 }
 
+
+        /*MAIN*/
+
 .contenido-main-tres{
+    min-width: 100%;
     display: grid;
-    height: 100vh;
-    background-color: #f9f9f9;
-    padding: 30px 20px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    "menu-izquierdo contenido-main-tres-right"
+    ;
 }
+.contenido-main-tres .menu-izquierdo{ /*solucion*/
+    grid-area: menu-izquierdo;
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+}
+.contenido-main-tres .contenido-main-tres-right{  /*solucion*/
+    grid-area: contenido-main-tres-right;
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+    padding: 20px;
+}
+
+
+/*Encbezado de seccion*/
+
 .contenido-main-tres h2{
     margin-bottom: 20px;
     font-family: 'Roboto', sans-serif;
@@ -940,6 +964,9 @@ a.active span{
     font-size: 20px;
     margin-bottom: 10px;
 }
+
+/*Contenedor de publicacion*/
+
 .contenedor-foto-descripcion{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -947,8 +974,10 @@ a.active span{
 }
 .imagen-de-torta{
     width: 90%;
-    height: 80%;
+    height: 93%;
 }
+
+
 .items-line{
     display: grid;
     width: 96%;
@@ -967,6 +996,11 @@ a.active span{
     display:flex;
     align-self: center;
 }
+
+
+/*Descripcion del producto right*/
+
+/*Nombre de tienda y ubicacion*/
 .store-name{
     display: grid;
     grid-template-columns: 50px 1fr;
@@ -992,13 +1026,19 @@ a.active span{
 .titulo-tienda{
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
 }
+
+
 .parrafo p{
     font-family: 'Open Sans', sans-serif;
     padding: 5px;
     font-size: 200;
+    font-weight: lighter;
 }
+
+
+
 .short-description{
     display: grid;
     grid-template-columns: 8% 1fr;
@@ -1020,6 +1060,9 @@ a.active span{
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
 }
+
+
+
 .ubicacion{
     display: flex;
     width: 100%;
@@ -1028,6 +1071,168 @@ a.active span{
     padding: 0px 20px 20px 30px;
 }
 
+/*Botones de compra POST*/
+
+.botones-de-compra{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.push-post{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.push-post p{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px 0px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+.separar-botones{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+.separar-botones a{
+    background-color: #9D4AA8;
+    border-radius: 15px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+.boton-añadir{
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    align-items: end;
+}
+.boton-compra-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-color: #9D4AA8;
+    padding: 6px 15px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+/*Comentarios POST*/
+
+.comentarios-post-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.square-comment{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.square-comment-dos{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    border-left: solid 1px gray;
+}
+
+.comentarios-tittle{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    padding: 25px 0px 0px 35px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    gap: 8px;
+    padding-bottom: 20px;
+}
+.usuarios-phrase{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.usuarios-phrase img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.usuarios-phrase span{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.espacio-entre-comentarios{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding-bottom: 30px;
+}
+.espacio-entre-comentarios p{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Visitar perfil*/
+
+.visitar-perfil-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+    margin-top: 30px;
+}
+.imagen-banner{
+    background-image: url(../assets/img/banner-tortas.jpg);
+    background-position: 40% 72%;
+}
+.tienda-nombre{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.tienda-nombre p{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+.visita-catalogo{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.visita-catalogo p{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+.boton-a-perfil{
+    background-color: #AF0404;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    border: solid #AF0404;
+    border-radius: 20px;
+}
 
 
 
@@ -1170,8 +1375,8 @@ a.active span{
         justify-content: center;
         justify-items: center;
     }
-
 }
+
 @media (max-width: 725px){
     .linea-1 .barra-pais{
         font-size: 16px;
@@ -1197,6 +1402,12 @@ a.active span{
     .resultado-tienda{
         align-content: space-between;
         justify-content: center;
+    }
+    .cuts-container .titulo-cuts{
+        padding-left: 20px;
+    }
+    .buscador-tiendas .descubrir-tiendas{
+        padding-left: 20px;
     }
 }
 
@@ -1278,6 +1489,10 @@ a.active span{
     .item-2{
         background-color: #000;
     }
+    .lista-centrada{
+        justify-items: center;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 564px){
@@ -1326,6 +1541,8 @@ a.active span{
         padding: 0;
         margin-top: 15px;
     }
+
+
     @media (max-width: 415px){
         .barra-pais label{
             display: none;
@@ -1536,9 +1753,11 @@ a.active span{
     }
     .contenido-main-dos{
         grid-template-rows: 3% 1fr;
+        align-items: baseline;
     }
     .productos{
         display: none;
+        background-color: #f9f9f9;
     }
     
 }
@@ -1548,9 +1767,127 @@ a.active span{
         grid-template-columns: 98%;
         grid-template-rows: repeat(12, 1fr);
         grid-template-areas: none;
+        padding-top: 0%;
     }
     .contenido-main-dos .contenido-main-dos-right{
         flex-direction: column-reverse;
     }
     }
+}
+
+
+/*Media Queries*/
+    /*TORTA DE CHOCOLATE tercera pagina*/
+
+@media (max-width: 1077px){
+    .separar-botones{
+        row-gap: 10px;
+    }
+    .separar-botones a{
+        font-size: 12px;
+    }
+    .boton-añadir{
+        align-items: center;
+    }
+}
+
+@media (max-width: 1025px){
+    .contenedor-foto-descripcion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 48% 48%;
+    grid-template-areas: 
+    "it-1"
+    "it-2";
+    gap: 2px;
+    justify-items: center;
+    align-content: space-between;
+    }
+
+    .it-1{
+        grid-area: it-1;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .it-2{
+        grid-area: it-2;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .botones-de-compra{
+        padding: 0px 0px 15px 0px;
+    }
+    .push-post{
+        flex-direction: row;
+    }
+    .ubicacion{
+        padding: 0px 20px 0px 0px;
+    }
+
+
+}
+
+@media (max-width: 805px){
+    .contenido-main-tres{
+        min-width: 100%;
+        display: grid;
+        grid-template-rows: 2% 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "menu-izquierdo"
+        "contenido-main-tres-right"
+        ;
+    }
+    .menu-izquierdo a{
+        padding: 11px;
+        align-items: center;
+        color: #000;
+    }
+    .menu-display-none{
+        display: none;
+        background-color: #f9f9f9;
+    }
+    .contenido-main-tres .menu-izquierdo{ /*solucion*/
+        grid-area: menu-izquierdo;
+        display: flex;
+        min-width: 100%;
+        justify-content: space-between;
+    }
+    .contenido-main-tres .contenido-main-tres-right{  /*solucion*/
+        grid-area: contenido-main-tres-right;
+        display: flex;
+        flex-direction: column;
+    }
+    .contenido-main-tres .arreglos{
+        margin-top: 23px;
+    }
+
+    @media (max-width: 638px){
+        .botones-de-compra{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 48%);
+            grid-template-areas: 
+            "push-post"
+            "boton-añadir"
+            ;
+        }
+    }
+    .push-post{
+        grid-area: push-post;
+        display: flex;
+        width: 100%;
+
+    }
+    .boton-añadir{
+        grid-area: boton-añadir;
+        display: flex;
+        width: 100%;
+    }
+    
 }
