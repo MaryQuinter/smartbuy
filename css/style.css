@@ -1236,6 +1236,227 @@ a.active span{
 
 
 
+
+/*Cuarta pag html, Perfil********************/
+
+a{
+    text-decoration: none;
+    color: #5F9DF7;
+}
+.hero-contain{
+    min-width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 27% 1fr 10%; /*header main footer*/
+    grid-template-areas: 
+    "header header" /*plantilla*/
+    "contenido contenido"
+    "footer footer";
+}
+.mi-header{
+    grid-area: header;
+}
+
+.contenido-main-cuatro{
+    grid-area: contenido;
+    background-color: #f9f9f9;
+    display: flex;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: #ff0000;
+}
+
+
+/*Secciones dentro del contenedor PERFIL*/
+
+/*header*/
+
+.mi-header{
+    min-width: 100%;
+    display: grid;
+    grid-template-rows: 20% 20% 60%;
+}
+
+
+        /*MAIN*/
+
+
+.contenido-main-cuatro{
+    min-width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    "menu-izquierdo main-lado-derecho"
+    ;
+}
+.contenido-main-cuatro .menu-izquierdo{ /*solucion*/
+    grid-area: menu-izquierdo;
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+}
+.contenido-main-cuatro .contenido-main-cuatro-right{  /*solucion*/
+    grid-area: main-lado-derecho;
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+}
+
+
+.portada-color{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    padding: 1opx 0px;;
+    color: #000;
+}
+
+.encabezado-perfil{
+    display: grid;
+    width: 100%;
+    height: 150px;
+    grid-template-columns: repeat (4, 1fr);
+    grid-template-rows: repeat(2, 35%);
+    grid-template-areas: 
+    "button-perfil nombre-tienda nombre-tienda button-mensaje"
+    "presentacion-tienda presentacion-tienda presentacion-tienda presentacion-tienda"
+    ;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    align-content: space-between;
+}
+
+.boton-perfil{
+    grid-area: button-perfil;
+}
+.nombre-tienda{
+    grid-area: nombre-tienda;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    align-items: center;
+}
+.button-perfil{
+    grid-area:button-mensaje;
+}
+.presentacion-tienda{
+    grid-area: presentacion-tienda;
+    padding: 20px 0px;
+    display: flex;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+
+/*CATALAGO DE FOTOS*/
+
+.contenedor-catalago .card-one{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2% 97%;
+    gap: 30px 20px;
+    grid-template-areas: 
+    "categoria . . ."
+    "picture-1 picture-2 picture-3 picture-4"
+    ;
+    padding-bottom: 50px;
+    justify-items: center;
+}
+
+.categoria{
+    grid-area: categoria;
+}
+.picture-1{
+    grid-area: picture-1;
+}
+.picture-2{
+    grid-area: picture-2;
+}
+
+.picture-3{
+    grid-area: picture-3;
+}
+.picture-4{
+    grid-area: picture-4;
+}
+
+.picture-1 img{
+    width: 240px;
+    height: 300px;
+}
+.picture-2 img{
+    width: 240px;
+    height: 300px;
+}
+.picture-3 img{
+    width: 240px;
+    height: 300px;
+}
+.picture-4 img{
+    width: 240px;
+    height: 300px;
+}
+
+.contenedor-catalago-2 .card-two{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2% 97%;
+    gap: 30px 20px;
+    grid-template-areas: 
+    "categoria . . ."
+    "picture-1 picture-2 picture-3 picture-4"
+    ;
+    padding-bottom: 50px;
+    justify-items: center;
+}
+
+.contenedor-catalago-3 .card-tree{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2% 97%;
+    gap: 30px 20px;
+    grid-template-areas: 
+    "categoria . . ."
+    "picture-1 picture-2 picture-3 picture-4"
+    ;
+    padding-bottom: 50px;
+    justify-items: center;
+}
+
+.contenedor-catalago-4 .card-four{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2% 97%;
+    gap: 30px 20px;
+    grid-template-areas: 
+    "categoria . . ."
+    "picture-1 picture-2 picture-3 picture-4"
+    ;
+    padding-bottom: 50px;
+    justify-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /*Media Queries*/
     /*INDEX.HTML primera pagina*/
 

@@ -5,96 +5,185 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dulces Detalles</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <body>
-        <div class="contenedor active"> <!--active es mi segunda clase para agregrar la transition-->
-    
-            <header class="mi-header">
-    
-                <div class="linea-1">
-                    <div class="barra-pais">
-                        <label for="Pais">País</label>
-                        <select name="Argentina" id="">
-                            <option value="Alemania">Alemania</option>
-                            <option value="Canada">Canada</option>
-                            <option value="China">China</option>
-                            <option value="Corea del Sur">Corea del Sur</option>
-                            <option value="Reino Unido">Reino Unido</option>
-                            <option value="Afganistan">Afganistán</option>
-                            <option value="España">Alemania</option>
-                            <option value="Estados Unidos">Estados Unidos</option>
-                            <option value="Mexico">Mexico</option>
-                            <option value="Korea">Alemania</option>
-                        </select>
-                    </div>
-                    <div class="smartbuy-centro">
-                        <a class="logo-principal" href="index.html"><img src="../assets/icons/logo.png" alt=""><span class="color-ancla-logo">SmartBuy</span></a>
-                    </div>
-                    <div class="tu-pedido">
-                        <a class="logo-principal" href="#"><img class="icono-sizesi" src="../assets/icons/pedidovacio.png" alt=""><span class="color-ancla-pedido">Tu pedido está <strong>vacío</strong></span></a>
-                    </div>
-                </div>
-                <div class="linea-2">
-                    <div class="lengua">
-                        <label for="Idioma">Idioma</label>
-                        <select name="Español" id="">
-                            <option value="Español">Español</option>
-                            <option value="Coreano">Coreano</option>
-                            <option value="Inglés">Inglés</option>
-                            <option value="Portugues">Portugues</option>
-                        </select>
-                    </div>
-                    <div class="search-container">
-                        <input type="search" placeholder="Buscar">
-                        <img class="icono-search" src="../assets/icons/buscar.png" alt="">
-                    </div>
-                    <div class="bienvenido">
-                            <p>¡Bienvenido! <a class="bienve-eres" href="#">Iniciar Sesión</a></p>
-                    </div>
-                    <div class="nuevo">
-                        <p>¿Eres nuevo aquí? <a class="bienve-eres" href="#">Regístrate</a></p>
-                    </div>
-                </div>
-                <div class="linea-3">
-                    <h1>Compra rápido<br>
-                    y ahorra fácil con SmartBuy
-                    </h1>
-                </div>
-    
-            </header>
+    <div class="hero-contain"> 
 
-            <nav class="menu-left">
-                <div class="stiky">
-                    <div class="lista-centrada">
-                        <a class="logo-menu" href="../index.html"><img src="../assets/icons/home.png" alt=""><span>Inicio</span></a>
-                        <a class="logo-menu" href="#"><img src="../assets/icons/perfil.png" alt=""><span>Perfil</span></a>
-                        <a class="logo-menu" href="#"><img src="../assets/icons/enviar.png" alt=""><span>Mensajes</span></a>
-                        <a class="logo-menu" href="#"><img src="../assets/icons/boton-de-notificaciones.png" alt=""><span>Notificaciones</span></a>
-                        <a class="logo-menu" href="#"><img src="../assets/icons/estrella.png" alt=""><span>Favoritos</span></a>
-                        <a class="logo-menu" href="#"><img src="../assets/icons/metodo-de-pago.png" alt=""><span>Pagos</span></a>
-                        <a class="logo-menu" href="#"><img src="../assets/icons/tiienda.png" alt=""><span>Mi tienda</span></a>
-                        <a class="logo-menu" href="#"><img src="../assets/icons/menu.png" alt=""><span>Más</span></a>
-                    </div>
-    
-                    <hr>
-                    
-                <div class="productos">
-                    <div class="alinea-icono">
-                        <a class="logo-principal" href="#"><img src="../assets/icons/notas.png" alt=""><span>Tu pedido</span></a>
-                    <div>
+        <header class="mi-header">
+
+            <div class="linea-1">
+                <div class="barra-pais">
+                    <label for="Pais">País</label>
+                    <select name="Argentina" id="">
+                        <option value="Alemania">Alemania</option>
+                        <option value="Canada">Canada</option>
+                        <option value="China">China</option>
+                        <option value="Corea del Sur">Corea del Sur</option>
+                        <option value="Reino Unido">Reino Unido</option>
+                        <option value="Afganistan">Afganistán</option>
+                        <option value="España">Alemania</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Korea">Alemania</option>
+                    </select>
+                </div>
+                <div class="smartbuy-centro">
+                    <a class="logo-principal" href="index.html"><img src="../assets/icons/logo.png" alt=""><span class="color-ancla-logo">SmartBuy</span></a>
+                </div>
+                <div class="tu-pedido">
+                    <a class="logo-principal" href="#"><img class="icono-sizesi" src="../assets/icons/pedidovacio.png" alt=""><span class="color-ancla-pedido">Tu pedido está <strong>vacío</strong></span></a>
+                </div>
+            </div>
+            <div class="linea-2">
+                <div class="lengua">
+                    <label for="Idioma">Idioma</label>
+                    <select name="Español" id="">
+                        <option value="Español">Español</option>
+                        <option value="Coreano">Coreano</option>
+                        <option value="Inglés">Inglés</option>
+                        <option value="Portugues">Portugues</option>
+                    </select>
+                </div>
+                <div class="search-container">
+                    <input type="search" placeholder="Buscar">
+                    <img class="icono-search" src="../assets/icons/buscar.png" alt="">
+                </div>
+                <div class="bienvenido">
+                        <p>¡Bienvenido! <a class="bienve-eres" href="#">Iniciar Sesión</a></p>
+                </div>
+                <div class="nuevo">
+                    <p>¿Eres nuevo aquí? <a class="bienve-eres" href="#">Regístrate</a></p>
+                </div>
+            </div>
+            <div class="linea-3">
+                <h1>Compra rápido<br>
+                y ahorra fácil con SmartBuy
+                </h1>
+            </div>
+
+        </header>
+
+        <!--main-->
+
+        
+        <main class="contenido-main-cuatro"> <!--contenedor del main-->
+
+            <section class="menu-izquierdo"> 
+            <div class="stiky">
+                <div class="lista-centrada">
+                    <a class="active" href="../index.html"><img src="../assets/icons/home.png" alt=""><span class="menu-display-none">Inicio</span></a>
+                    <a class="logo-menu" href="#"><img src="../assets/icons/perfil.png" alt=""><span class="menu-display-none">Perfil</span></a>
+                    <a class="logo-menu" href="#"><img src="../assets/icons/enviar.png" alt=""><span class="menu-display-none">Mensajes</span></a>
+                    <a class="logo-menu" href="#"><img src="../assets/icons/boton-de-notificaciones.png" alt=""><span class="menu-display-none">Notificaciones</span></a>
+                    <a class="logo-menu" href="#"><img src="../assets/icons/estrella.png" alt=""><span class="menu-display-none">Favoritos</span></a>
+                    <a class="logo-menu" href="#"><img src="../assets/icons/metodo-de-pago.png" alt=""><span class="menu-display-none">Pagos</span></a>
+                    <a class="logo-menu" href="#"><img src="../assets/icons/tiienda.png" alt=""><span class="menu-display-none">Mi tienda</span></a>
+                    <a class="logo-menu" href="#"><img src="../assets/icons/menu.png" alt=""><span class="menu-display-none">Más</span></a>
+                </div>
+
+                <hr>
+                
+                <div class="productos menu-display-none">
+                    <p>Mi pedido</p>
+                    <img src="../assets/icons/caja-de-regalo.png" alt="">
                     <a href="#"><p id="monto">US$0.00</p></a>
                 </div>
-            </nav>
+            </div>
+        </section>
 
-            <main class="contenido-main-tres">
 
-            </main>
 
-    <!--js bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <div class="contenido-main-4-right">
+        
+        <div class="portada-color">
+            <div>
+                <p>Dulces Detalles</p>
+                <img src="../assets/icons/perfil-foto.png" alt="">
+            </div>
+        </div>
+
+        <div class="encabezado-perfil">
+            <button class="boton-perfil"><span>Añadir al pedido</span></button>
+            <div class="nombre-tienda">
+                <h2>Dulces Detalles</h2>
+                <p>Barquisimeto, Venezuela</p>
+            </div>
+            <button class="button-perfil"><span>Enviar mensaje</span></button>
+            <p class="presentacion-tienda">Pequeña descripción de la tienda</p>
+        </div>
+
+
+        <section class="contenedor-catalago">
+        <div class="card-one">
+            <p class="categoria">Desayunos Sorpresa</p>
+            <a class="picture-1" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+            <a class="picture-2" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+            <a class="picture-3" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+            <a class="picture-4" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+        </div>
+        </section>
+
+        <section class="contenedor-catalago-2">
+            <div class="card-two">
+                <p class="categoria">Tortas frías</p>
+                <a class="picture-1" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+                <a class="picture-2" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+                <a class="picture-3" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+                <a class="picture-4" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+            </div>
+        </section>
+
+        <section class="contenedor-catalago-3">
+            <div class="card-tree">
+                <p class="categoria">Tortas en Buttercream</p>
+                <a class="picture-1" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+                <a class="picture-2" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+                <a class="picture-3" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+                <a class="picture-4" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+            </div>
+            </section>
+    
+            <section class="contenedor-catalago-4">
+                <div class="card-four">
+                    <p class="categoria">Pasapalos</p>
+                    <a class="picture-1" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+                    <a class="picture-2" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+                    <a class="picture-3" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+                    <a class="picture-4" href="#"><img src="../assets/img/desayunoo.png" alt=""></a>
+                </div>
+            </section>
+
+
+
+            
+
+        
+
+
+
+
+
+
+
+
+
+    </div>
+        </main>
+
+
+
+        <footer class="hero-3-footer">
+            <p class="first-info">Más información</p>
+            <ul class="second-list">
+                <li>Sobre SmartBuy</li>
+                <li>Accesibilidad</li>
+                <li>Cómo cuidamos tu privacidad</li>
+                <li>Ayuda</li>
+                <li>Devoluciones</li>
+            </ul>
+            </footer>
+
+    
 </body>
 </html>
